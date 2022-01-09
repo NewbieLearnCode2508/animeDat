@@ -1,0 +1,317 @@
+/* Header */
+#header {
+    height: var(--header-height);
+    background-color: rgba( 0, 0, 0, 0.85);
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    border-bottom: 2px solid var(--theme-light-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+/* Header left */
+
+.header__left {
+    width: 228px;
+    height: 100%;
+}
+
+.header__home-page-link {
+    display: flex;
+    text-decoration: none;
+    width: 120px;
+    height: 100%;
+    align-items: center;
+}
+
+.header__logo1 {
+    width: 68px;
+    height: 100%;
+    cursor: url(../img/cursor/curmiku9.png), auto;
+}
+
+/* Header Center */
+
+.header__center {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+
+.header__search {
+    height: 80%;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    margin: 0 24px;
+}
+
+.search__input {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding-left: 16px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.search__btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 14px 14px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+/* Header Right */
+
+.header__right {
+    list-style: none;
+    display: flex;
+    margin-left: 8%;
+    height: var(--header-height);
+}
+
+.header__login-link,
+.header__register-link {
+    font-size: 1.5rem;
+    padding: 0 16px;
+    text-decoration: none;
+    color: var(--white-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item-link:hover,
+.header__login-link:hover,
+.header__register-link:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    cursor: url(../img/cursor/curmiku9.png), auto;
+    transition: all ease 0.2s;
+}
+
+/* App Container */
+
+/* navbar */
+.navbar-warp {
+    background-color: #0f0f0f;
+    width: 100%;
+    padding-top: var(--header-height);
+}
+
+.navbar {
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar__item-link {
+    display: block;
+    padding: 0 16px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item {
+    position: relative;
+}
+
+/* Navbar subnav */
+
+.navbar__item:hover .nav__item-subnav {
+    display: flex;
+}
+
+.nav__item-subnav {
+    list-style: none;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: var(--navbar-height);
+    left: 0;
+    padding: 6px 0;
+    width: 160px;
+    background-color: rgba( 0, 0, 0, 0.85);
+    transition: all ease 0.2s;
+    z-index: 1;
+}
+
+.nav__subnav-item-link {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    padding: 8px 12px;
+    min-width: 140px;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.nav__subnav-item {
+    width: 100%;
+    padding: 0 12px;
+}
+
+.nav__subnav-item-link:hover {
+    cursor: url(../img/cursor/curmiku9.png), auto;
+    transition: all linear 0.2s;
+    color: var(--primary-color);
+    background-color: var(--theme-color);
+}
+
+/* Subnav Type */
+
+.subnav-type-list {
+    display: flex;
+}
+
+.navbar__item-subnav-type {
+    position: absolute;
+    top: var(--header-height);
+    width: max-content;
+    padding: 12px;
+    background-color: rgba( 0, 0, 0, 0.85);
+    border-radius: 4px;
+    display: none;
+    z-index: 2;
+}
+
+.navbar__item:hover .navbar__item-subnav-type {
+    display: block;
+}
+
+.subnav-type__list-col-1 {
+    list-style: none;
+    width: 25%;
+}
+
+.subnav-type-footer,
+.subnav-type-heading {
+    font-size: 1.6rem;
+    color: #16cc00;
+}
+
+.subnav-type__col-1-link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    padding: 8px 14px;
+    min-width: 155px;
+    display: block;
+}
+
+.subnav-type__col-1-item:hover .subnav-type__col-1-link{
+    cursor: url(../img/cursor/curmiku9.png), auto;
+    transition: all linear 0.2s;
+    color: var(--primary-color);
+    background-color: var(--theme-color);
+}
+
+
+.subnav-type-footer {
+    text-decoration: none;
+    font-weight: 600;
+    cursor: url(../img/cursor/curmiku9.png), auto;
+}
+/* Content */
+
+.content {
+    background-color: #0f0f0f;
+    height: 2000px;
+}
+
+/* Slider */
+
+.slider-anime__heading {
+    padding-top: 22px;
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 12px;
+    position: relative;
+    width: 1200px;
+}
+
+.slider-anime__heading::after {
+    content: "";
+    display: block;
+    background-color: #16cc00;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    height: 1.8px;
+}
+
+.slider-anime {
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-warp {
+    overflow: hidden;
+    align-items: center;
+}
+
+.slider {
+    flex-wrap: nowrap;
+    display: flex;
+    transition: all 0.6s ease-in-out;
+    list-style: none;
+}
+
+.slide-item {
+    position: relative;
+    width: 119px;
+}
+
+.slide-item:hover .slide-item-overlay {
+    display: block;
+    cursor: url(../img/cursor/curmiku9.png), auto;
+}
+
+.slide-item-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba( 0, 0, 0, 0.5);
+    transition: all linear 0.2s;
+}
+
+.img-warp {
+    width: 100%;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+}

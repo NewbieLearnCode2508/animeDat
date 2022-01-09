@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    /* background-color: #000; */
+}
+
+html, body {
+    cursor: url(../img/cursor/curmiku6.png), auto;
+}
+
+/* Common */
+:root {
+    --primary-color: #000;
+    --text-color: #fff;
+    --header-height: 48px;
+    --theme-light-color: #159fff;
+    --theme-color: #007cba;
+    --white-color: #fff;
+    --navbar-height: 50px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.anime-chapters {
+    background-color: #9C27B0;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
